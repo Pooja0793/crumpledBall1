@@ -3,6 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
+const Render = Matter.Render;
 
 var ground,paper,bottomWall,leftWall,rightWall;
 
@@ -25,6 +26,18 @@ function setup() {
 	rightWall=new Dustbin(1395,615,20,120);
 
 	Engine.run(engine);
+	
+	var render = Render.create({
+	element:documnt.body,
+	engine:engine,
+	options:{
+	width:1600,
+	height:700,
+	wireframes:false
+	}
+	});
+	
+	Render.run(render);
   
 }
 
