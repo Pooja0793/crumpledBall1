@@ -27,8 +27,8 @@ function setup() {
 
 	Engine.run(engine);
 	
-	var render = Render.create({
-	element:documnt.body,
+	/*var render = Render.create({
+	element:document.body,
 	engine:engine,
 	options:{
 	width:1600,
@@ -37,7 +37,7 @@ function setup() {
 	}
 	});
 	
-	Render.run(render);
+	Render.run(render);*/
   
 }
 
